@@ -1,0 +1,41 @@
+.overlay {
+    background-color: rgba(0,0,0, 0.4);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top:0;
+    width: 100%;
+}
+
+#introSentenceContainer {
+    width: 100%;
+    color: white;
+    font-weight: 200;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#introSentence {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 150%;
+    padding: 0 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#introButton {
+    margin-top: 30px;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    box-sizing: inherit;
+    display: inline-block;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+#introButton i {
+    transition: transform .5s ease-in-out
+}

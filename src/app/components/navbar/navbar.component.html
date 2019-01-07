@@ -1,0 +1,43 @@
+<div class="sticky-top" ngsReveal>
+    <div id="main-sidebar" class="list-group" ngsRevealSet [ngsInterval]="200" [ngsSelector]="'.list-group-item'">
+        <div class="list-group-item list-group-item-action" (click)="onNavbarBtnClick('#intro')">
+            <div id="rodrigo-pic">
+                <img src="assets/images/rodrigo.jpg" />
+            </div>
+            <span id="name">Rodrigo Santos</span><br>
+            <span id="role">Full-Stack Developer</span>
+        </div>
+        <div class="list-group-item list-group-item-action" (click)="onNavbarBtnClick('#about')" [ngClass]="{ 'active' : scrollString === 'about' }">
+            <i class="fa fa-user fa-fw"></i>
+            <span class="nav-text">About</span>
+        </div>
+        <div class="list-group-item list-group-item-action" (click)="onNavbarBtnClick('#experience')" [ngClass]="{ 'active' : scrollString === 'experience' }">
+            <i class="fa fa-briefcase fa-fw"></i>
+            <span class="nav-text">Experience</span>
+        </div>
+        <div class="list-group-item list-group-item-action" (click)="onNavbarBtnClick('#education')" [ngClass]="{ 'active' : scrollString === 'education' }">
+            <i class="fa fa-graduation-cap fa-fw"></i>
+            <span class="nav-text">Education</span>
+        </div>
+        <!-- <div class="list-group-item list-group-item-action" (click)="onNavbarBtnClick('#projects')">
+            <i class="fa fa-code fa-fw"></i>
+            <span class="nav-text">Projects</span>
+        </div> -->
+        <div class="list-group-item list-group-item-action" (click)="onNavbarBtnClick('#skills')" [ngClass]="{ 'active' : scrollString === 'skills' }">
+            <i class="fa fa-magic"></i>
+            <span class="nav-text">Skills</span>
+        </div>
+        <div class="list-group-item list-group-item-action" (click)="onNavbarBtnClick('#languages')" [ngClass]="{ 'active' : scrollString === 'languages' }">
+            <i class="fa fa-language"></i>
+            <span class="nav-text">Languages</span>
+        </div>
+        <div class="list-group-item list-group-item-action" (click)="onNavbarBtnClick('#contact')" [ngClass]="{ 'active' : scrollString === 'contact' }">
+            <i class="fa fa-envelope"></i>
+            <span class="nav-text">Contact</span>
+        </div>
+        <div class="list-group-item list-group-item-action" (click)="onNavbarBtnClick('#bio')" [ngClass]="{ 'active' : scrollString === 'bio' }">
+            <i class="fa fa-history"></i>
+            <span class="nav-text">Bio</span>
+        </div>
+    </div>
+</div>

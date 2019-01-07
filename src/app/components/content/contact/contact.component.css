@@ -1,0 +1,29 @@
+.social-link {
+    margin-bottom: 30px;
+}
+
+.social-link .social-link-icon {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    background: #42B1CC;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.social-link .social-link-icon i {
+    font-size: 35px;
+    margin-top: 10px;
+    color: #036880;
+}
+
+.social-link .social-link-text {
+    display: inline-block;
+    margin-left: 30px;
+    text-align: center;
+    color: #42B1CC;
+    font-weight: 200;
+    font-size: 24px;
+}

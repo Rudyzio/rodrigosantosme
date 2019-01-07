@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.css';
+
+body {
+    /* font-family: "Lato", arial, sans-serif; */
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.title-container {
+    background-color: #20A1C0;
+    height: 80px;
+}
+
+.title-text {
+    line-height: 80px;
+    padding-left: 15px;
+    font-weight: 300;
+    font-size: 40px;
+    color: white;
+}
+
+.section-container {
+    padding: 20px 20px 20px 20px;
+    background: url("/assets/images/bg.png") repeat;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.card-title {
+    height: 50px;
+}
+
+.card-body {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.card-text {
+    font-style: italic;
+    font-weight: 400;
+    color: #20A1C0;
+}
+
+.card-title-maintext {
+    font-weight: 500;
+    font-size: 26px;
+    color: #20A1C0;
+    line-height: 50px;
+}
+
+.card-title-secondarytext {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.experience-card-role {
+    color: #778492;
+    font-weight: 300;
+    font-size: 18px;
+    float: right;
+    line-height: 50px;
+}
+
+.card-title-image {
+    line-height: 50px;
+}

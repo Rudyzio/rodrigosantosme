@@ -1,0 +1,42 @@
+.nav-text {
+    padding-left: 10px;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+#name {
+    color: #778492;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+#role {
+    color: #778492;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+#main-sidebar div {
+    cursor: pointer;
+}
+
+#rodrigo-pic {
+    width: 200px;
+    height: 200px;
+    margin: 0px auto 0px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+#rodrigo-pic img {
+    width: 210px;
+    height: 210px;
+    margin: -10px 0px;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #20A1C0;
+    border-color: #20A1C0;
+}

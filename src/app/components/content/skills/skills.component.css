@@ -1,0 +1,51 @@
+.skill-item {
+    display: table;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.skill-image-container {
+    display: table-cell;
+    vertical-align: middle;
+    width: 10%;
+}
+
+.skill-image {
+    height: 50px;
+    display: block;
+    margin: auto;
+}
+
+.skill-item-content {
+    margin-bottom: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 90%;
+}
+
+.skill-level-label {
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    margin-top: 0;
+}
+
+.skill-level-description {
+    color: #ccd1d6;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Lato", arial, sans-serif;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.skill-level-bar {
+    height: 25px;
+    background: #42B1CC;
+}
+
+.skill-level-bar-inner {
+    height: inherit;
+    background: #036880;
+}

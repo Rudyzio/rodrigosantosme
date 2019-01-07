@@ -1,0 +1,21 @@
+.language-container {
+    margin-bottom: 30px;
+}
+
+.language-image {
+    height: 50px;
+}
+
+.language-text-container {
+    display: inline-block;
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #42B1CC;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.language-icon-container {
+    display: inline-block;
+}

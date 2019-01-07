@@ -1,0 +1,42 @@
+<div class="title-container">
+  <h3 class="title-text">Languages</h3>
+</div>
+<div class="section-container" ngsRevealSet [ngsInterval]="200" [ngsSelector]="'.language-container'">
+
+  <div class="language-container">
+    <img class="language-image" src="/assets/images/flags/portugal.png">
+    <div class="language-text-container">
+      <div class="language-text">Portuguese - Native Speaker</div>
+    </div>
+    <div class="language-icon-container">
+      <ng-container *ngFor="let dummy of ' '.repeat(5).split('')">
+        <i class="fa fa-star"></i>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="language-container">
+    <img class="language-image" src="/assets/images/flags/unitedkingdom.png">
+    <div class="language-text-container">
+      <div class="language-text">English - Intermediate</div>
+    </div>
+    <div class="language-icon-container">
+      <ng-container *ngFor="let dummy of ' '.repeat(4).split('')">
+        <i class="fa fa-star"></i>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="language-container">
+    <img class="language-image" src="/assets/images/flags/spain.png">
+    <div class="language-text-container">
+      <div class="language-text">Spanish - Intermediate</div>
+    </div>
+    <div class="language-icon-container">
+      <ng-container *ngFor="let dummy of ' '.repeat(3).split('')">
+        <i class="fa fa-star"></i>
+      </ng-container>
+    </div>
+  </div>
+
+</div>
