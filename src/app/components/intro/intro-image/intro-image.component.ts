@@ -28,7 +28,7 @@ export class IntroImageComponent implements OnInit {
   constructor(private _sanitizer: DomSanitizer) { }
 
   ngOnInit() {
-    this.currentImg = `url(../../../assets/images/intro/${this.imgSrcs[this.imgSrcCounter]}.jpg) no-repeat top center/cover`;
+    this.currentImg = `url(assets/images/intro/${this.imgSrcs[this.imgSrcCounter]}.jpg) no-repeat top center/cover`;
     this.sanitizedImage = this._sanitizer.bypassSecurityTrustStyle(this.currentImg);
   }
 
@@ -53,7 +53,7 @@ export class IntroImageComponent implements OnInit {
     this.state = this.state === 'in' ? 'out' : 'in';
     if (this.state === 'out') {
       setTimeout(() => {
-        this.currentImg = `url(../../../assets/images/intro/${this.imgSrcs[this.imgSrcCounter]}.jpg) no-repeat top center/cover`;
+        this.currentImg = `url(assets/images/intro/${this.imgSrcs[this.imgSrcCounter]}.jpg) no-repeat top center/cover`;
         this.sanitizedImage = this._sanitizer.bypassSecurityTrustStyle(this.currentImg);
       }, 3000)
     }
