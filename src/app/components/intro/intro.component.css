@@ -39,3 +39,12 @@
 #introButton i {
     transition: transform .5s ease-in-out
 }
+
+@media (max-width: 749px) {
+    #introSentence {
+        font-size: 28px;
+    }
+    #introButton {
+        font-size: 20px; 
+    }
+}

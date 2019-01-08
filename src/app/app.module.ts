@@ -19,6 +19,7 @@ import { LanguagesComponent } from './components/content/languages/languages.com
 import { IntroImageComponent } from './components/intro/intro-image/intro-image.component';
 
 import { ScrollSpyService } from './services/scroll-spy/scroll-spy.service';
+import { SkillItemComponent } from './components/content/skills/skill-item/skill-item.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ScrollSpyService } from './services/scroll-spy/scroll-spy.service';
     IntroButtonHighlightDirective,
     BioComponent,
     LanguagesComponent,
-    IntroImageComponent
+    IntroImageComponent,
+    SkillItemComponent
   ],
   imports: [
     BrowserModule,

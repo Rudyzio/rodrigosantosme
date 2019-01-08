@@ -1,19 +1,17 @@
-.nav-text {
-    padding-left: 10px;
-    font-weight: 300;
-    font-size: 22px;
+#main-sidebar {
+    height: 100vh;
 }
 
 #name {
     color: #778492;
-    font-weight: 600;
-    font-size: 36px;
+    font-weight: 400;
+    font-size: 26px;
 }
 
 #role {
     color: #778492;
     font-weight: 300;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 #main-sidebar div {
@@ -21,17 +19,34 @@
 }
 
 #rodrigo-pic {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     margin: 0px auto 0px;
-    border-radius: 100px;
+    border-radius: 50px;
     overflow: hidden;
 }
 
 #rodrigo-pic img {
-    width: 210px;
-    height: 210px;
-    margin: -10px 0px;
+    height: 110px;
+    margin: -5px auto 0px -2px;
+}
+
+.nav-text {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.list-group-item {
+    padding: .40rem 1.25rem;
+}
+
+.list-group-item > div {
+    width: 40px;
+    display: inline-block;
+}
+
+.list-group-item > span {
+    display: inline-block;
 }
 
 .list-group-item.active {

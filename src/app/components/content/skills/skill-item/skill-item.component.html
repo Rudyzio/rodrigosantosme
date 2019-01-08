@@ -1,0 +1,11 @@
+<div class="skill-item row">
+  <div class="col-md-2">
+    <img class="skill-image" src="{{imgSrc}}">
+  </div>
+  <div class="skill-item-content col-md-10">
+    <div class="skill-level-label">{{name}}<span class="skill-level-description" data-original-title title>{{valueString}}</span></div>
+    <div class="skill-level-bar">
+      <div class="skill-level-bar-inner" [style.width]="value + '%'"></div>
+    </div>
+  </div>
+</div>

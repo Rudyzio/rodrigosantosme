@@ -5,7 +5,7 @@
 body {
     /* font-family: "Lato", arial, sans-serif; */
     font-weight: 300;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .title-container {
@@ -17,7 +17,7 @@ body {
     line-height: 80px;
     padding-left: 15px;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 34px;
     color: white;
 }
 
@@ -36,7 +36,7 @@ body {
 
 .card-body {
     font-weight: 300;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .card-text {
@@ -46,8 +46,8 @@ body {
 }
 
 .card-title-maintext {
-    font-weight: 500;
-    font-size: 26px;
+    font-weight: 400;
+    font-size: 24px;
     color: #20A1C0;
     line-height: 50px;
 }
@@ -55,6 +55,7 @@ body {
 .card-title-secondarytext {
     font-weight: 300;
     font-size: 20px;
+    color: #778492;
 }
 
 .experience-card-role {
@@ -65,6 +66,7 @@ body {
     line-height: 50px;
 }
 
-.card-title-image {
-    line-height: 50px;
+.card-footer {
+    font-size: 12px;
+    font-weight: 400;
 }
