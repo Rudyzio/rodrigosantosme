@@ -21,10 +21,19 @@
         margin-left: 0;
     }
     #introSentence {
-        font-size: 28px;
+        font-size: 30px;
     }
     #introButton {
-        font-size: 20px; 
+        font-size: 18px; 
+    }
+}
+
+@media(min-width: 768px) {
+    #introSentence {
+        font-size: 50px;
+    }
+    #introButton {
+        font-size: 32px;
     }
 }
 
@@ -38,7 +47,6 @@
 
 #introSentence {
     font-weight: 300;
-    font-size: 50px;
     line-height: 150%;
     padding: 0 30px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
@@ -50,7 +58,6 @@
     border: 2px solid #fff;
     box-sizing: inherit;
     display: inline-block;
-    font-size: 32px;
     cursor: pointer;
 }
 

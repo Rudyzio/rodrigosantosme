@@ -16,7 +16,6 @@
 }
 
 .social-link-icon i {
-    font-size: 35px;
     margin-top: 10px;
     color: #036880;
 }
@@ -26,5 +25,25 @@
     text-align: center;
     color: #42B1CC;
     font-weight: 200;
-    font-size: 18px;
+    
+}
+
+@media (max-width: 768px) {
+    .social-link-text {
+        font-size: 14px;
+    }
+
+    .social-link-icon i {
+        font-size: 35px;
+    }
+}
+
+@media(min-width: 768px) {
+    .social-link-text {
+        font-size: 18px;
+    }
+
+    .social-link-icon i {
+        font-size: 35px;
+    }
 }
