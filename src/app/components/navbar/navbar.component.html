@@ -1,11 +1,17 @@
-<div class="sticky-top" ngsReveal>
-    <div id="main-sidebar" class="list-group" ngsRevealSet [ngsInterval]="200" [ngsSelector]="'.list-group-item'">
-        <div class="list-group-item list-group-item-action" (click)="onNavbarBtnClick('#intro')">
+<div>
+    <!-- <div id="main-sidebar" class="list-group" ngsRevealSet [ngsInterval]="200" [ngsSelector]="'.list-group-item'"> -->
+    <div id="main-sidebar" class="list-group">
+        <div class="list-group-item list-group-item-action" (click)="onNavbarBtnClick('#intro')" *ngIf="!mobileQuery.matches">
             <div id="rodrigo-pic">
                 <img src="assets/images/rodrigo.jpg" />
             </div>
             <br><span id="name">Rodrigo Santos</span><br>
             <span id="role">Full-Stack Developer</span>
+        </div>
+        <div class="list-group-item list-group-item-action" (click)="onNavbarBtnClick('#intro')" *ngIf="mobileQuery.matches">
+            <div id="rodrigo-pic">
+                <img src="assets/images/rodrigo.jpg" />
+            </div>
         </div>
         <div class="list-group-item list-group-item-action" (click)="onNavbarBtnClick('#about')" [ngClass]="{ 'active' : scrollString === 'about' }">
             <div><i class="fa fa-user fa-fw"></i></div>

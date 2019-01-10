@@ -1,11 +1,28 @@
-<rs-intro></rs-intro>
-<div class="container-fluid">
-  <div class="row">
-    <div id="sideMenu" class="col-md-3" style="padding: 0 0 0 0;">
-      <rs-navbar></rs-navbar>
-    </div>
-    <div class="col-md-9" style="padding: 0 0 0 0;">
-      <rs-content></rs-content>
-    </div>
+<mat-toolbar id="topbar">
+  <a class="button-collapse" (click)="drawer.toggle()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <div class="name-title">
+    <a id="name" class="teal-text">
+      Rodrigo Santos
+    </a>
+    <div>Full-Stack Developer</div>
   </div>
-</div>
+</mat-toolbar>
+<rs-intro></rs-intro>
+<mat-sidenav-container id="rs-container">
+  <mat-sidenav id="matsidenav" #drawer
+    [style.marginTop.px]="mobileQuery.matches ? 56 : 0" 
+    [mode]="mobileQuery.matches ? 'over' : 'side'"
+    [opened]="mobileQuery.matches ? false : true"
+    [fixedInViewport]="true"
+    [fixedTopGap]="0"
+    [fixedBottomGap]="0"
+    [style.visibility]="'hidden'"
+    (click)="mobileQuery.matches ? drawer.toggle() : ''">
+    <rs-navbar [mobileQuery]="mobileQuery"></rs-navbar>
+  </mat-sidenav>
+  <mat-sidenav-content id="rscontent">
+    <rs-content></rs-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

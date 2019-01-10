@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ScrollSpyService } from 'src/app/services/scroll-spy/scroll-spy.service';
 
@@ -8,6 +8,7 @@ import { ScrollSpyService } from 'src/app/services/scroll-spy/scroll-spy.service
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit, OnDestroy {
+  @Input() mobileQuery: MediaQueryList;
 
   subscription: Subscription;
 

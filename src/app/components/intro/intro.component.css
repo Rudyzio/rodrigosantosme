@@ -1,3 +1,8 @@
+#introContainer {
+    position: relative;
+    margin-left: 218px;
+}
+
 .overlay {
     background-color: rgba(0,0,0, 0.4);
     height: 100%;
@@ -5,22 +10,35 @@
     position: absolute;
     top:0;
     width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    #introContainer {
+        margin-left: 0;
+    }
+    #introSentence {
+        font-size: 28px;
+    }
+    #introButton {
+        font-size: 20px; 
+    }
 }
 
 #introSentenceContainer {
-    width: 100%;
+    width: 70%;
     color: white;
     font-weight: 200;
-    position:absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
     text-align: center;
+    vertical-align: middle;
 }
 
 #introSentence {
     font-weight: 300;
-    font-size: 64px;
+    font-size: 50px;
     line-height: 150%;
     padding: 0 30px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
@@ -38,13 +56,4 @@
 
 #introButton i {
     transition: transform .5s ease-in-out
-}
-
-@media (max-width: 749px) {
-    #introSentence {
-        font-size: 28px;
-    }
-    #introButton {
-        font-size: 20px; 
-    }
 }

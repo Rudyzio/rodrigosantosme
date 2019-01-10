@@ -1,5 +1,52 @@
-@media (max-width: 768px) {
-    #sideMenu {
+@media (min-width: 768px) {
+    #topbar {
         display: none;
+    }
+}
+
+@media(max-width: 768px) {
+    #topbar {
+        background-color: white;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0; /* Sets the sticky toolbar to be on top */
+        z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+        height: 56px;
+    }
+
+    .button-collapse {
+        color: #20A1C0;
+        height: 56px;
+        line-height: 56px;
+        cursor: pointer;
+    }
+
+    .button-collapse i {
+        color: #20A1C0;
+    }
+
+    .name-title {
+        display: block;
+        padding-top: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .name-title a {
+        color: #20A1C0;
+        font-size: 22px;
+        font-weight: 300;
+        display: block;
+        position: relative;
+        line-height: 20px;
+    }
+
+    .name-title div {
+        font-size: 14px;
+        display: block;
+        position: relative;
+        line-height: 20px;
+        font-weight: 200;
+        color: #778492;
     }
 }

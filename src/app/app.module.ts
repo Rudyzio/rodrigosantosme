@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgsRevealModule } from 'ngx-scrollreveal';
 
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { IntroComponent } from './components/intro/intro.component';
@@ -42,7 +45,9 @@ import { SkillItemComponent } from './components/content/skills/skill-item/skill
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    NgsRevealModule
+    NgsRevealModule,
+    MatSidenavModule,
+    MatToolbarModule
   ],
   providers: [
     ScrollSpyService
