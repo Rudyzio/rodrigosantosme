@@ -1,0 +1,14 @@
+<div class="card" ngsReveal>
+  <div class="card-header row">
+    <div class="col-md-2">
+      <img class="card-title-image" src="{{companyLogo}}" height="50px" />
+    </div>
+    <div class="card-title-maintext col-md-7"><a href="{{companyAddress}}" target="_blank">{{companyName}}</a></div>
+    <div class="experience-card-role col-md-3">{{companyRole}}</div>
+  </div>
+  <div class="card-body" [innerHtml]="bodyText">
+  </div>
+  <div class="card-footer text-muted">
+    {{footerText}}
+  </div>
+</div>

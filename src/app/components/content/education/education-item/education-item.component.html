@@ -1,0 +1,15 @@
+<div class="card" ngsReveal>
+  <div class="card-header row">
+    <div class="col-md-1">
+      <img class="card-title-image" src="{{educationLogo}}" height="50px" />
+    </div>
+    <div class="col-md-11">
+      <span class="card-title-maintext">{{educationName}}</span><br>
+      <span class="card-title-secondarytext">{{educationDegree}}</span>
+    </div>
+  </div>
+  <div class="card-body" [innerHtml]="educationBody">
+  <div class="card-footer text-muted">
+    {{educationFooter}}
+  </div>
+</div>

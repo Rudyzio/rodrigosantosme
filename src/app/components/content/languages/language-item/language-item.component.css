@@ -1,0 +1,14 @@
+.language-container {
+    margin-bottom: 30px;
+    line-height: 50px;
+}
+
+.language-image {
+    height: 50px;
+}
+
+.language-text-container {
+    color: #42B1CC;
+    font-weight: 200;
+    font-size: 18px;
+}

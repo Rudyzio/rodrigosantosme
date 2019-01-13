@@ -1,0 +1,13 @@
+<div class="language-container row">
+  <div class="col-md-2">
+    <img class="language-image" src="{{flag}}">
+  </div>
+  <div class="language-text-container col-md-5">
+    <div class="language-text">{{language}}</div>
+  </div>
+  <div class="col-md-5">
+    <ng-container *ngFor="let dummy of ' '.repeat(stars).split('')">
+      <i class="fa fa-star"></i>
+    </ng-container>
+  </div>
+</div>

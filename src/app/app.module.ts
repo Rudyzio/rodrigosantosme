@@ -23,6 +23,9 @@ import { IntroImageComponent } from './components/intro/intro-image/intro-image.
 
 import { ScrollSpyService } from './services/scroll-spy/scroll-spy.service';
 import { SkillItemComponent } from './components/content/skills/skill-item/skill-item.component';
+import { ExperienceItemComponent } from './components/content/experience/experience-item/experience-item.component';
+import { EducationItemComponent } from './components/content/education/education-item/education-item.component';
+import { LanguageItemComponent } from './components/content/languages/language-item/language-item.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { SkillItemComponent } from './components/content/skills/skill-item/skill
     BioComponent,
     LanguagesComponent,
     IntroImageComponent,
-    SkillItemComponent
+    SkillItemComponent,
+    ExperienceItemComponent,
+    EducationItemComponent,
+    LanguageItemComponent,
   ],
   imports: [
     BrowserModule,

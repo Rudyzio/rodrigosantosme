@@ -2,68 +2,31 @@
   <h3 class="title-text">Experience</h3>
 </div>
 <div class="section-container">
-  <div class="card" ngsReveal>
-    <div class="card-header row">
-      <div class="col-md-2">
-        <img class="card-title-image" src="assets/images/Reveal_Logo.png" height="45px" width="70px" />
-      </div>
-      <div class="card-title-maintext col-md-7"><a href="http://www.reveal.se" target="_blank">Reveal</a></div>
-      <div class="experience-card-role col-md-3">Full-Stack Developer</div>
-    </div>
-    <div class="card-body">
-      <p class="card-text">Currently working remotely for Reveal, a swedish company where the main goal consists in
-        providing pharmaceutical statistics to the customers.</p>
-      <ul>
-        <li>Developed a customized wrapper for the <a href="https://mailchimp.com/">MailChimp</a> API in C# using .NET
-          Core.</li>
-        <li>Developed a webhook to receive statistics from <a href="https://sendgrid.com/">SendGrid</a> in C# using
-          .NET Core.</li>
-        <li>Developed an API to handle email templates with various languages in C# using .NET Core.</li>
-        <li>Added features to the company's client portal, in Visual Basic using ASP.NET Web Forms.</li>
-        <li>Client portal migration from ASP.NET Web Forms (in Visual Basic) to ASP.NET Core MVC (in C#).</li>
-      </ul>
-    </div>
-    <div class="card-footer text-muted">
-      January 2018 - Present | Company HQ in Stockholm, Sweden | Working remotely from Lisbon, Portugal
-    </div>
-  </div>
-  <div class="card" ngsReveal>
-    <div class="card-header row">
-      <div class="col-md-2">
-        <img class="card-title-image" src="assets/images/logomdss.png" height="50px" />
-      </div>
-      <div class="card-title-maintext col-md-7"><a href="https://mdss.pt" target="_blank">MDSS - Meta Documents Systems, LDA</a></div>
-      <div class="experience-card-role col-md-3">Full-Stack Developer</div>
-    </div>
-    <div class="card-body">
-      <p class="card-text">Full-Stack developer working with both front-end and back-end of two applications: Proof of
-        Life and dDocs</p>
-      <ul>
-        <li>Full-Stack developer working with both front-end and back-end of two applications: Proof of Life and dDocs</li>
-        <li>Led the team developing Proof of Life</li>
-        <li>Deployment and Continuous Integration with both applications</li>
-      </ul>
-    </div>
-    <div class="card-footer text-muted">
-      June 2016 - January 2018 | Lisbon, Portugal
-    </div>
-  </div>
-  <div class="card" ngsReveal>
-    <div class="card-header row">
-      <div class="col-md-2">
-        <img class="card-title-image" src="assets/images/inesclogo.png" height="50px" />
-      </div>
-      <div class="card-title-maintext col-md-7"><a href="https://www.inesc-id.pt" target="blank">INESC-ID</a></div>
-      <div class="experience-card-role col-md-3">Trainee</div>
-    </div>
-    <div class="card-body">
-      <ul>
-        <li>Developed the first dDocs prototype</li>
-        <li>Support to various other colleagues in various projects</li>
-      </ul>
-    </div>
-    <div class="card-footer text-muted">
-      September 2015 - December 2017 | Lisbon, Portugal
-    </div>
-  </div>
+  <rs-experience-item 
+    [companyLogo]="'assets/images/Reveal_Logo.png'"
+    [companyAddress]="'http://www.reveal.se'"
+    [companyName]="'Reveal'"
+    [companyRole]="'Full-Stack Developer'"
+    [bodyText]="revealBody"
+    [footerText]="'January 2018 - Present | Company HQ in Stockholm, Sweden | Working remotely from Lisbon, Portugal'">
+  </rs-experience-item>
+
+  <rs-experience-item 
+    [companyLogo]="'assets/images/logomdss.png'"
+    [companyAddress]="'https://mdss.pt'"
+    [companyName]="'MDSS - Meta Documents Systems, LDA'"
+    [companyRole]="'Full-Stack Developer'"
+    [bodyText]="mdssBody"
+    [footerText]="'June 2016 - January 2018 | Lisbon, Portugal'">
+  </rs-experience-item>
+
+  <rs-experience-item 
+    [companyLogo]="'assets/images/inesclogo.png'"
+    [companyAddress]="'https://www.inesc-id.pt'"
+    [companyName]="'INESC-ID'"
+    [companyRole]="'Trainee'"
+    [bodyText]="inescBody"
+    [footerText]="'September 2015 - December 2017 | Lisbon, Portugal'">
+  </rs-experience-item>
+
 </div>
